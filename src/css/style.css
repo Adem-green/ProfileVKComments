@@ -1,0 +1,305 @@
+.fon {
+    min-height: 1500px;
+}
+
+.background {
+    height: 370px;
+    background: url("../images/fon2.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.profile-header {
+    width: 80%;
+    height: 400px;
+    margin-top: -164px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-info {
+    background-color: #06A763;
+    height: 400px;
+    padding: 40px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+    overflow: auto;
+    border-radius: 7px;
+}
+
+.title-text-1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+
+.title-text-2 {
+    font-weight: 300;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+
+.about-text {
+    color: white;
+}
+
+.profile-avatar {
+    height: 400px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 7px;
+}
+
+.comments {
+    width: 60%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.29);
+    border-radius: 7px;
+}
+
+.comments-header {
+    height: 40px;
+    background-color: #5075a5;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.comments-comment {
+    overflow: hidden;
+}
+
+.comments-header-title {
+    color: white;
+    float: left;
+    margin-left: 2%;
+    margin-top: 1%;
+    font-weight: bold;
+}
+
+.comments-header-logo {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    float: right;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.foto {
+    background-image: url(../images/foto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    border-radius: 60%;
+    background-position: center;
+    margin-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.ramka {
+    height: 90px;
+    margin-left: 80px;
+    margin-top: 12px;
+    margin-right: 20px;
+    padding: 10px 14px 12px;
+    border-radius: 2px;
+    border: 1px solid #edeef0;
+}
+
+.lb {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    display: inline-block;
+    border: 0;
+    width: 100%;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    height: 100%;
+}
+
+.button {
+    float: right;
+    margin-right: 20px;
+    padding: 7px 16px 8px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #597da3;
+    color: white;
+    margin-top: 10px;
+    border-color: white;
+}
+
+.comments-menu {
+    width: 60%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comment-1-foto {
+    background-image: url(../images/comment-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    border-radius: 60%;
+    background-position: center;
+    margin-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.name {
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 70px;
+    color: #5075a5;
+    font-weight: bold;
+}
+
+.com {
+    margin: 0 0 0 70px;
+}
+
+.data {
+    margin: 0 0 0 70px;
+    color: #939393;
+}
+
+.comment-2-foto {
+    background-image: url(../images/comment-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    border-radius: 60%;
+    background-position: center;
+    margin-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.comment-3-foto {
+    background-image: url(../images/comment-3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+    border-radius: 60%;
+    background-position: center;
+    margin-left: 20px;
+    float: left;
+    cursor: pointer;
+}
+
+.modal-dialog-vk {
+    width: 50%;
+    margin: 220px auto;
+    max-width: 650px;
+}
+
+.modal-header-vk {
+    padding: 0;
+}
+
+.vk-auth-header {
+    height: 50px;
+    background-color: #5075a5;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px
+}
+
+.vk-auth-header-logo {
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    float: left;
+    height: 45px;
+    width: 45px;
+    background-size: cover;
+    margin-left: 8px;
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+.close-vk {
+    margin-top: 5px !important;
+    cursor: pointer !important;
+    margin-right: 6px;
+}
+
+.modal-title-vk {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 10px auto;
+}
+
+.bold-title-vk {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.vk-auth-body {
+    width: 100%;
+    max-width: 160px;
+    margin: 20px auto 40px;
+}
+
+.text-login {
+    font-size: 12px;
+    font-weight: bold;
+    height: 17px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.vk-login {
+    margin-bottom: 10px;
+    border: 1px solid #edeef0;
+    width: 100%;
+    max-width: 160px;
+}
+
+.text-password {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.vk-password {
+    margin-bottom: 20px;
+    border: 1px solid #edeef0;
+    width: 100%;
+    max-width: 160px;
+}
+
+.vk-submit {
+    width: 100%;
+    background-color: #5075a5;
+    color: white;
+    border-radius: 7px;
+    border: 0;
+    padding: 5px;
+    font-size: small;
+    max-width: 160px;
+    margin-bottom: 10px;
+}
