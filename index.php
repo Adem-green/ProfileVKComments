@@ -21,26 +21,31 @@ $data = [
     ],
 
     'comments' => [
-        'first_name' => '',
-        'last_name' => '',
-        'avatar' => '',
-        'string_date' => '',
-    ],
 
-    [
-        'first_name' => '',
-        'last_name' => '',
-        'avatar' => '',
-        'string_date' => '',
-    ],
+        [
+            'first_name' => '',
+            'last_name' => '',
+            'avatar' => '',
+            'string_date' => '',
+        ],
 
-    [
-        'first_name' => '',
-        'last_name' => '',
-        'avatar' => '',
-        'string_date' => '',
-    ],
+        [
+            'first_name' => '',
+            'last_name' => '',
+            'avatar' => '',
+            'string_date' => '',
+        ],
+
+        [
+            'first_name' => '',
+            'last_name' => '',
+            'avatar' => '',
+            'string_date' => '',
+        ],
+    ]
 ];
+
+//echo '<pre>' . print_r($data, true) . '</pre>';
 ?>
 
 <!DOCTYPE html>
