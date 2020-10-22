@@ -4,20 +4,16 @@ $data = [
         'first_name' => 'JOHN ',
         'last_name' => 'DOE',
         'position' => 'Software Engineer & UI/UX Expert email',
-        'about' => 'Рыбным текстом называется текст, служащий для временного наполнения макета в
-                                    публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный
-                                    текст также известен как текст-заполнитель или же текст-наполнитель. Иногда
-                                    текст-«рыба» также используется композиторами при написании музыки. Они напевают его
-                                    перед тем, как сочинены соответствующие слова. Уже в 16-том веке рыбные тексты имели
-                                    широкое распространение у печатников.',
+        'about' => 'Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. Иногда текст-«рыба» также используется композиторами при написании музыки. Они напевают его перед тем, как сочинены соответствующие слова. Уже в 16-том веке рыбные тексты имели широкое распространение у печатников.',
         'avatar' => '/images/avatar.jpg.',
     ],
 
     'page' => [
+        'title' => 'ВК',
         'cover' => '/images/fon2.jpg.',
         'comment_block_title' => 'Комментарии',
         'comment_text_placeholder' => 'Ваш комментарии...',
-        'comment_btn_caption' => 'отправить',
+        'comment_btn_caption' => 'Отправить',
         'auth_subtitle' => 'Для продолжения вам необходимо войти',
         'auth_subtitle_2' => 'ВКонтакте',
         'auth_login_caption' => 'Телефон или email',
@@ -32,6 +28,7 @@ $data = [
             'first_name' => 'Тлеген ',
             'last_name' => 'Кустобаев',
             'avatar' => 'images/comment-1.jpg',
+            'comment' => 'Прикольно',
             'string_date' => 'Три часа назад',
         ],
 
@@ -39,6 +36,7 @@ $data = [
             'first_name' => 'Владислав ',
             'last_name' => 'Смирнов',
             'avatar' => 'images/comment-2.jpg',
+            'comment' => 'Это типо резюме?',
             'string_date' => 'Вчера',
         ],
 
@@ -46,6 +44,7 @@ $data = [
             'first_name' => 'Анжелика ',
             'last_name' => 'Зайцева',
             'avatar' => 'images/comment-3.webp',
+            'comment' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto asperiores, commodi, cum debitis enim expedita inventore minima minus molestiae perferendis provident sequi tenetur? Blanditiis corporis eos iure neque saepe!',
             'string_date' => '5 минут назад',
         ],
     ]
@@ -59,7 +58,7 @@ $data = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VK</title>
+    <title><?php echo $data['page']['title']; ?></title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -71,7 +70,7 @@ $data = [
     <div class="row">
         <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
             <div class="background row"
-                 style="height: 370px;background: url(<?php echo $data['page']['cover']; ?>); no-repeat center; background-size: cover;"></div>
+                 style="background-image: url(<?php echo $data['page']['cover']; ?>);"></div>
         </div>
     </div>
     <div class="row">
@@ -167,25 +166,21 @@ $data = [
                     <div class="comments-list__item-avatar-40"
                          style="background-image: url(<?php echo $data['comments']['0']['avatar']; ?>);"></div>
                     <div class="comments-list__item-user-name"><?php echo $data['comments']['0']['first_name']; ?><?php echo $data['comments']['0']['last_name']; ?></div>
-                    <div class="comments-list__item-user-comment">Прикольно</div>
+                    <div class="comments-list__item-user-comment"><?php echo $data['comments']['0']['comment']; ?></div>
                     <div class="comments-list__item-user-comment-date"><?php echo $data['comments']['0']['string_date']; ?></div>
                 </div>
                 <div class="comments-list__item">
                     <div class="comments-list__item-avatar-40"
                          style="background-image: url(<?php echo $data['comments']['1']['avatar']; ?>);"></div>
                     <div class="comments-list__item-user-name"><?php echo $data['comments']['1']['first_name'] ?><?php echo $data['comments']['1']['last_name'] ?></div>
-                    <div class="comments-list__item-user-comment">Это типо резюме?</div>
+                    <div class="comments-list__item-user-comment"><?php echo $data['comments']['1']['comment']; ?></div>
                     <div class="comments-list__item-user-comment-date"><?php echo $data['comments']['1']['string_date'] ?></div>
                 </div>
                 <div class="comments-list__item">
                     <div class="comments-list__item-avatar-40"
                          style="background-image: url(<?php echo $data['comments']['2']['avatar'] ?>);"></div>
                     <div class="comments-list__item-user-name"><?php echo $data['comments']['2']['first_name'] ?><?php echo $data['comments']['2']['last_name'] ?></div>
-                    <div class="comments-list__item-user-comment">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto asperiores, commodi, cum
-                        debitis enim expedita inventore minima minus molestiae perferendis provident sequi tenetur?
-                        Blanditiis corporis eos iure neque saepe!
-                    </div>
+                    <div class="comments-list__item-user-comment"><?php echo $data['comments']['2']['comment']; ?></div>
                     <div class="comments-list__item-user-comment-date"><?php echo $data['comments']['2']['string_date'] ?></div>
                 </div>
             </div>

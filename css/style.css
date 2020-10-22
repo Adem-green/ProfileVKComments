@@ -16,6 +16,13 @@
     min-height: 1500px;
 }
 
+.background {
+    height: 370px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .profile-header {
     width: 80%;
     height: 400px;
