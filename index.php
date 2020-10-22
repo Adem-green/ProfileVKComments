@@ -47,6 +47,14 @@ $data = [
             'comment' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto asperiores, commodi, cum debitis enim expedita inventore minima minus molestiae perferendis provident sequi tenetur? Blanditiis corporis eos iure neque saepe!',
             'string_date' => '5 минут назад',
         ],
+
+        [
+            'first_name' => 'Иван ',
+            'last_name' => 'Черных',
+            'avatar' => 'images/comment-4.jpg',
+            'comment' => 'Не думал что это сработает',
+            'string_date' => '2 секунды назад',
+        ],
     ]
 ];
 
@@ -182,6 +190,13 @@ $data = [
                     <div class="comments-list__item-user-name"><?php echo $data['comments']['2']['first_name'] ?><?php echo $data['comments']['2']['last_name'] ?></div>
                     <div class="comments-list__item-user-comment"><?php echo $data['comments']['2']['comment']; ?></div>
                     <div class="comments-list__item-user-comment-date"><?php echo $data['comments']['2']['string_date'] ?></div>
+                </div>
+                <div class="comments-list__item">
+                    <div class="comments-list__item-avatar-40"
+                         style="background-image: url(<?php echo $data['comments']['3']['avatar'] ?>);"></div>
+                    <div class="comments-list__item-user-name"><?php echo $data['comments']['3']['first_name'] ?><?php echo $data['comments']['3']['last_name'] ?></div>
+                    <div class="comments-list__item-user-comment"><?php echo $data['comments']['3']['comment']; ?></div>
+                    <div class="comments-list__item-user-comment-date"><?php echo $data['comments']['3']['string_date'] ?></div>
                 </div>
             </div>
         </div>
