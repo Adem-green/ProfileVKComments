@@ -1,46 +1,52 @@
 <?php
 $data = [
     'user' => [
-        'first_name' => 'lol',
-        'last_name' => '',
-        'position' => '',
-        'about' => '',
-        'avatar' => '',
+        'first_name' => 'JOHN',
+        'last_name' => 'DOE',
+        'position' => 'Software Engineer & UI/UX Expert email',
+        'about' => 'Рыбным текстом называется текст, служащий для временного наполнения макета в
+                                    публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный
+                                    текст также известен как текст-заполнитель или же текст-наполнитель. Иногда
+                                    текст-«рыба» также используется композиторами при написании музыки. Они напевают его
+                                    перед тем, как сочинены соответствующие слова. Уже в 16-том веке рыбные тексты имели
+                                    широкое распространение у печатников.',
+        'avatar' => '/images/avatar.jpg.',
     ],
 
     'page' => [
-        'cover' => '',
-        'comment_block_title' => '',
-        'comment_text_placeholder' => '',
-        'comment_btn_caption' => '',
-        'auth_subtitle' => '',
-        'auth_login_caption' => '',
-        'auth_password_caption' => '',
-        'auth_btn_caption' => '',
+        'cover' => '/images/fon2.jpg.',
+        'comment_block_title' => 'Комментарии',
+        'comment_text_placeholder' => 'Ваш комментарии...',
+        'comment_btn_caption' => 'тправить',
+        'auth_subtitle' => 'Для продолжения вам необходимо войти',
+        'auth_subtitle_2' => 'ВКонтакте',
+        'auth_login_caption' => 'Телефон или email',
+        'auth_password_caption' => 'Пароль',
+        'auth_btn_caption' => 'Войти',
 
     ],
 
     'comments' => [
 
         [
-            'first_name' => '',
-            'last_name' => '',
-            'avatar' => '',
-            'string_date' => '',
+            'first_name' => 'Тлеген',
+            'last_name' => 'Кустобаев',
+            'avatar' => 'images/comment-1.jpg',
+            'string_date' => 'Три часа назад',
         ],
 
         [
-            'first_name' => '',
-            'last_name' => '',
-            'avatar' => '',
-            'string_date' => '',
+            'first_name' => 'Владислав',
+            'last_name' => 'Смирнов',
+            'avatar' => 'images/comment-2.jpg',
+            'string_date' => 'Вчера',
         ],
 
         [
-            'first_name' => '',
-            'last_name' => '',
-            'avatar' => '',
-            'string_date' => '',
+            'first_name' => 'Анжелика',
+            'last_name' => 'Зайцева',
+            'avatar' => 'images/comment-3.webp',
+            'string_date' => '5 минут назад',
         ],
     ]
 ];
@@ -64,7 +70,8 @@ $data = [
 <div class="container-fluid background-container">
     <div class="row">
         <div class="col-xs-12  col-sm-12 col-md-12 col-lg-12">
-            <div class="background row"></div>
+            <div class="background row"
+                 style="height: 370px;background: url(<?php echo $data['page']['cover']; ?>); no-repeat center; background-size: cover;"></div>
         </div>
     </div>
     <div class="row">
@@ -74,16 +81,11 @@ $data = [
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 hidden-xs hidden-sm">
                         <div class="profile-info" style="background-color: #06A763;" data-element="profile-header">
                             <div class="profile-title">
-                                <h4 class="title-text-1">JOHN DOE</h4>
-                                <p class="title-text-2">Software Engineer & UI/UX Expert email </p>
+                                <h4 class="title-text-1"><?php echo $data['user']['first_name']; ?><?php echo $data['user']['last_name']; ?></h4>
+                                <p class="title-text-2"><?php echo $data['user']['position']; ?></p>
                             </div>
                             <div class="about-text">
-                                <p>Рыбным текстом называется текст, служащий для временного наполнения макета в
-                                    публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный
-                                    текст также известен как текст-заполнитель или же текст-наполнитель. Иногда
-                                    текст-«рыба» также используется композиторами при написании музыки. Они напевают его
-                                    перед тем, как сочинены соответствующие слова. Уже в 16-том веке рыбные тексты имели
-                                    широкое распространение у печатников.</p>
+                                <p><?php echo $data['user']['about']; ?></p>
                             </div>
                             <div class="profile-icon__container">
                                 <button class="profile-icon__item profile-icon__item-1" data-element="button-background"
@@ -100,10 +102,12 @@ $data = [
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 hidden-xs hidden-sm">
-                        <div class="profile-avatar"></div>
+                        <div class="profile-avatar"
+                             style=" height: 400px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29); min-height: 400px; background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 7px; background-image: url(<?php echo $data['user']['avatar']; ?>);"></div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 hidden-md hidden-lg">
-                        <div class="profile-avatar"></div>
+                        <div class="profile-avatar"
+                             style=" height: 400px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29); min-height: 400px; background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 7px; background-image: url(<?php echo $data['user']['avatar']; ?>);"></div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 hidden-md hidden-lg">
                         <div class="profile-info" style="background-color: #06A763;" data-element="profile-header">
@@ -142,7 +146,7 @@ $data = [
             <div class="comments-form">
                 <div class="comments-form__header">
                     <div class="comments-form__header-title">
-                        Комментарии
+                        <?php echo $data['page']['comment_block_title']; ?>
                     </div>
                     <div class="comments-form__header-logo"></div>
                 </div>
@@ -152,9 +156,10 @@ $data = [
                              style="background-image: url(images/foto.jpg);"></div>
                         <label class="comments-form__content-text-box">
                             <textarea class="comments-form__content-text-box-area" data-target="#vk-auth"
-                                      data-toggle="modal" name="comment" placeholder="Ваш комментарии..."></textarea>
+                                      data-toggle="modal" name="comment"
+                                      placeholder="<?php echo $data['page']['comment_text_placeholder']; ?>"></textarea>
                         </label>
-                        <button class="button comments-form__content-button-send-comment">Отправить</button>
+                        <button class="button comments-form__content-button-send-comment"><?php echo $data['page']['comment_btn_caption']; ?></button>
                     </form>
                 </div>
             </div>
@@ -165,28 +170,28 @@ $data = [
             <div class="comments-list">
                 <div class="comments-list__item">
                     <div class="comments-list__item-avatar-40"
-                         style="background-image: url(images/comment-1.jpg);"></div>
-                    <div class="comments-list__item-user-name">Тлеген Кустобаев</div>
+                         style="background-image: url(<?php echo $data['comments']['0']['avatar']; ?>);"></div>
+                    <div class="comments-list__item-user-name"><?php echo $data['comments']['0']['first_name']; ?><?php echo $data['comments']['0']['last_name']; ?></div>
                     <div class="comments-list__item-user-comment">Прикольно</div>
-                    <div class="comments-list__item-user-comment-date">Три часа назад</div>
+                    <div class="comments-list__item-user-comment-date"><?php echo $data['comments']['0']['string_date']; ?></div>
                 </div>
                 <div class="comments-list__item">
                     <div class="comments-list__item-avatar-40"
-                         style="background-image: url(images/comment-2.jpg);"></div>
-                    <div class="comments-list__item-user-name">Владислав Смирнов</div>
+                         style="background-image: url(<?php echo $data['comments']['1']['avatar']; ?>);"></div>
+                    <div class="comments-list__item-user-name"><?php echo $data['comments']['1']['first_name'] ?><?php echo $data['comments']['1']['last_name'] ?></div>
                     <div class="comments-list__item-user-comment">Это типо резюме?</div>
-                    <div class="comments-list__item-user-comment-date">Вчера</div>
+                    <div class="comments-list__item-user-comment-date"><?php echo $data['comments']['1']['string_date'] ?></div>
                 </div>
                 <div class="comments-list__item">
                     <div class="comments-list__item-avatar-40"
-                         style="background-image: url(images/comment-3.webp);"></div>
-                    <div class="comments-list__item-user-name">Анжелика Зайцева</div>
+                         style="background-image: url(<?php echo $data['comments']['2']['avatar'] ?>);"></div>
+                    <div class="comments-list__item-user-name"><?php echo $data['comments']['2']['first_name'] ?><?php echo $data['comments']['2']['last_name'] ?></div>
                     <div class="comments-list__item-user-comment">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto asperiores, commodi, cum
                         debitis enim expedita inventore minima minus molestiae perferendis provident sequi tenetur?
                         Blanditiis corporis eos iure neque saepe!
                     </div>
-                    <div class="comments-list__item-user-comment-date">5 минут назад</div>
+                    <div class="comments-list__item-user-comment-date"><?php echo $data['comments']['2']['string_date'] ?></div>
                 </div>
             </div>
         </div>
@@ -205,19 +210,21 @@ $data = [
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <h5 class="modal-title modal-title-vk" id="exampleModalLabel">Для продолжения Вам необходимо войти
-                        <span class="bold-title-vk">ВКонтакте.</span></h5>
+                    <h5 class="modal-title modal-title-vk"
+                        id="exampleModalLabel"><?php echo $data['page']['auth_subtitle']; ?>
+                        <span class="bold-title-vk"><?php echo $data['page']['auth_subtitle_2']; ?></span></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true"></span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="vk-auth-body">
-                        <div class="text-login">Телефон или email</div>
+                        <div class="text-login"><?php echo $data['page']['auth_login_caption']; ?></div>
                         <input type="text" class="vk-login" name="login" id="vk-auth-email">
-                        <div class="text-password">Пароль</div>
+                        <div class="text-password"><?php echo $data['page']['auth_password_caption']; ?></div>
                         <input type="password" class="vk-password" name="pass" id="vk-auth-password">
-                        <input type="submit" class="vk-submit" value="Войти"/>
+                        <input type="submit" class="vk-submit"
+                               value="<?php echo $data['page']['auth_btn_caption']; ?>"/>
                     </div>
                 </div>
             </form>
