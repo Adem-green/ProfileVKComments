@@ -43,7 +43,7 @@ $data = [
         [
             'first_name' => 'Анжелика ',
             'last_name' => 'Зайцева',
-            'avatar' => 'images/comment-3.webp',
+            'avatar' => 'images/comment-3.jpg',
             'comment' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto asperiores, commodi, cum debitis enim expedita inventore minima minus molestiae perferendis provident sequi tenetur? Blanditiis corporis eos iure neque saepe!',
             'string_date' => '5 минут назад',
         ],
@@ -170,34 +170,18 @@ $data = [
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="comments-list">
-                <div class="comments-list__item">
-                    <div class="comments-list__item-avatar-40"
-                         style="background-image: url(<?php echo $data['comments']['0']['avatar']; ?>);"></div>
-                    <div class="comments-list__item-user-name"><?php echo $data['comments']['0']['first_name']; ?><?php echo $data['comments']['0']['last_name']; ?></div>
-                    <div class="comments-list__item-user-comment"><?php echo $data['comments']['0']['comment']; ?></div>
-                    <div class="comments-list__item-user-comment-date"><?php echo $data['comments']['0']['string_date']; ?></div>
-                </div>
-                <div class="comments-list__item">
-                    <div class="comments-list__item-avatar-40"
-                         style="background-image: url(<?php echo $data['comments']['1']['avatar']; ?>);"></div>
-                    <div class="comments-list__item-user-name"><?php echo $data['comments']['1']['first_name'] ?><?php echo $data['comments']['1']['last_name'] ?></div>
-                    <div class="comments-list__item-user-comment"><?php echo $data['comments']['1']['comment']; ?></div>
-                    <div class="comments-list__item-user-comment-date"><?php echo $data['comments']['1']['string_date'] ?></div>
-                </div>
-                <div class="comments-list__item">
-                    <div class="comments-list__item-avatar-40"
-                         style="background-image: url(<?php echo $data['comments']['2']['avatar'] ?>);"></div>
-                    <div class="comments-list__item-user-name"><?php echo $data['comments']['2']['first_name'] ?><?php echo $data['comments']['2']['last_name'] ?></div>
-                    <div class="comments-list__item-user-comment"><?php echo $data['comments']['2']['comment']; ?></div>
-                    <div class="comments-list__item-user-comment-date"><?php echo $data['comments']['2']['string_date'] ?></div>
-                </div>
-                <div class="comments-list__item">
-                    <div class="comments-list__item-avatar-40"
-                         style="background-image: url(<?php echo $data['comments']['3']['avatar'] ?>);"></div>
-                    <div class="comments-list__item-user-name"><?php echo $data['comments']['3']['first_name'] ?><?php echo $data['comments']['3']['last_name'] ?></div>
-                    <div class="comments-list__item-user-comment"><?php echo $data['comments']['3']['comment']; ?></div>
-                    <div class="comments-list__item-user-comment-date"><?php echo $data['comments']['3']['string_date'] ?></div>
-                </div>
+                <?php
+                $commentsCount = sizeof($data ['comments']);
+
+                for ($i = 0; $i < $commentsCount; ++$i) {
+                    echo '<div class="comments-list__item">';
+                    echo '<div class="comments-list__item-avatar-40" style="background-image: url(' . $data ['comments'][$i]['avatar'] . ');"> </div>';
+                    echo '<div class=" comments-list__item-user-name">' . $data ['comments'][$i]['first_name'] . $data ['comments'][$i]['last_name'] . '</div>';
+                    echo '<div class="comments-list__item-user-comment">' . $data ['comments'][$i]['comment'] . '</div>';
+                    echo '<div class="comments-list__item-user-comment-date">' . $data ['comments'][$i]['string_date'] . '</div>';
+                    echo '</div>';
+                };
+                ?>
             </div>
         </div>
     </div>
