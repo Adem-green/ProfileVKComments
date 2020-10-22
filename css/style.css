@@ -77,16 +77,14 @@
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.29);
 }
 
-/*.profile-avatar {*/
-/*    height: 400px;*/
-/*    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);*/
-/*    min-height: 400px;*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: center;*/
-/*    border-radius: 7px;*/
-/*    background-image: url("../images/avatar.jpg");*/
-/*}*/
+.profile-avatar {
+    height: 400px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+    min-height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 7px;
+}
 
 .comments-form {
     width: 60%;

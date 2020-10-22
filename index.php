@@ -1,7 +1,7 @@
 <?php
 $data = [
     'user' => [
-        'first_name' => 'JOHN',
+        'first_name' => 'JOHN ',
         'last_name' => 'DOE',
         'position' => 'Software Engineer & UI/UX Expert email',
         'about' => 'Рыбным текстом называется текст, служащий для временного наполнения макета в
@@ -17,7 +17,7 @@ $data = [
         'cover' => '/images/fon2.jpg.',
         'comment_block_title' => 'Комментарии',
         'comment_text_placeholder' => 'Ваш комментарии...',
-        'comment_btn_caption' => 'тправить',
+        'comment_btn_caption' => 'отправить',
         'auth_subtitle' => 'Для продолжения вам необходимо войти',
         'auth_subtitle_2' => 'ВКонтакте',
         'auth_login_caption' => 'Телефон или email',
@@ -29,21 +29,21 @@ $data = [
     'comments' => [
 
         [
-            'first_name' => 'Тлеген',
+            'first_name' => 'Тлеген ',
             'last_name' => 'Кустобаев',
             'avatar' => 'images/comment-1.jpg',
             'string_date' => 'Три часа назад',
         ],
 
         [
-            'first_name' => 'Владислав',
+            'first_name' => 'Владислав ',
             'last_name' => 'Смирнов',
             'avatar' => 'images/comment-2.jpg',
             'string_date' => 'Вчера',
         ],
 
         [
-            'first_name' => 'Анжелика',
+            'first_name' => 'Анжелика ',
             'last_name' => 'Зайцева',
             'avatar' => 'images/comment-3.webp',
             'string_date' => '5 минут назад',
@@ -103,25 +103,20 @@ $data = [
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 hidden-xs hidden-sm">
                         <div class="profile-avatar"
-                             style=" height: 400px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29); min-height: 400px; background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 7px; background-image: url(<?php echo $data['user']['avatar']; ?>);"></div>
+                             style="background-image: url(<?php echo $data['user']['avatar']; ?>);"></div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 hidden-md hidden-lg">
                         <div class="profile-avatar"
-                             style=" height: 400px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29); min-height: 400px; background-size: cover; background-repeat: no-repeat; background-position: center; border-radius: 7px; background-image: url(<?php echo $data['user']['avatar']; ?>);"></div>
+                             style="background-image: url(<?php echo $data['user']['avatar']; ?>);"></div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 hidden-md hidden-lg">
                         <div class="profile-info" style="background-color: #06A763;" data-element="profile-header">
                             <div class="profile-title">
-                                <h4 class="title-text-1">JOHN DOE</h4>
-                                <p class="title-text-2">Software Engineer & UI/UX Expert email </p>
+                                <h4 class="title-text-1"><?php echo $data['user']['first_name']; ?><?php echo $data['user']['last_name']; ?></h4>
+                                <p class="title-text-2"><?php echo $data['user']['position']; ?></p>
                             </div>
                             <div class="about-text">
-                                <p>Рыбным текстом называется текст, служащий для временного наполнения макета в
-                                    публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный
-                                    текст также известен как текст-заполнитель или же текст-наполнитель. Иногда
-                                    текст-«рыба» также используется композиторами при написании музыки. Они напевают его
-                                    перед тем, как сочинены соответствующие слова. Уже в 16-том веке рыбные тексты имели
-                                    широкое распространение у печатников.</p>
+                                <p><?php echo $data['user']['about']; ?></p>
                             </div>
                             <div class="profile-icon__container">
                                 <button class="profile-icon__item profile-icon__item-1" data-element="button-background"
