@@ -1,3 +1,48 @@
+<?php
+$data = [
+    'user' => [
+        'first_name' => 'lol',
+        'last_name' => '',
+        'position' => '',
+        'about' => '',
+        'avatar' => '',
+    ],
+
+    'page' => [
+        'cover' => '',
+        'comment_block_title' => '',
+        'comment_text_placeholder' => '',
+        'comment_btn_caption' => '',
+        'auth_subtitle' => '',
+        'auth_login_caption' => '',
+        'auth_password_caption' => '',
+        'auth_btn_caption' => '',
+
+    ],
+
+    'comments' => [
+        'first_name' => '',
+        'last_name' => '',
+        'avatar' => '',
+        'string_date' => '',
+    ],
+
+    [
+        'first_name' => '',
+        'last_name' => '',
+        'avatar' => '',
+        'string_date' => '',
+    ],
+
+    [
+        'first_name' => '',
+        'last_name' => '',
+        'avatar' => '',
+        'string_date' => '',
+    ],
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,11 +81,16 @@
                                     широкое распространение у печатников.</p>
                             </div>
                             <div class="profile-icon__container">
-                                <button class="profile-icon__item profile-icon__item-1" data-element="button-background" style="background-color: #3f51b5;"></button>
-                                <button class="profile-icon__item profile-icon__item-2" data-element="button-background" style="background-color: #2196f3;"></button>
-                                <button class="profile-icon__item profile-icon__item-3" data-element="button-background" style="background-color: #f44336;"></button>
-                                <button class="profile-icon__item profile-icon__item-4" data-element="button-background" style="background-color: #06a763;"></button>
-                                <button class="profile-icon__item profile-icon__item-5" data-element="button-background" style="background-color: #ef6c00;"></button>
+                                <button class="profile-icon__item profile-icon__item-1" data-element="button-background"
+                                        style="background-color: #3f51b5;"></button>
+                                <button class="profile-icon__item profile-icon__item-2" data-element="button-background"
+                                        style="background-color: #2196f3;"></button>
+                                <button class="profile-icon__item profile-icon__item-3" data-element="button-background"
+                                        style="background-color: #f44336;"></button>
+                                <button class="profile-icon__item profile-icon__item-4" data-element="button-background"
+                                        style="background-color: #06a763;"></button>
+                                <button class="profile-icon__item profile-icon__item-5" data-element="button-background"
+                                        style="background-color: #ef6c00;"></button>
                             </div>
                         </div>
                     </div>
@@ -65,11 +115,16 @@
                                     широкое распространение у печатников.</p>
                             </div>
                             <div class="profile-icon__container">
-                                <button class="profile-icon__item profile-icon__item-1" data-element="button-background" style="background-color: #3f51b5;"></button>
-                                <button class="profile-icon__item profile-icon__item-2" data-element="button-background" style="background-color: #2196f3;"></button>
-                                <button class="profile-icon__item profile-icon__item-3" data-element="button-background" style="background-color: #f44336;"></button>
-                                <button class="profile-icon__item profile-icon__item-4" data-element="button-background" style="background-color: #06a763;"></button>
-                                <button class="profile-icon__item profile-icon__item-5" data-element="button-background" style="background-color: #ef6c00;"></button>
+                                <button class="profile-icon__item profile-icon__item-1" data-element="button-background"
+                                        style="background-color: #3f51b5;"></button>
+                                <button class="profile-icon__item profile-icon__item-2" data-element="button-background"
+                                        style="background-color: #2196f3;"></button>
+                                <button class="profile-icon__item profile-icon__item-3" data-element="button-background"
+                                        style="background-color: #f44336;"></button>
+                                <button class="profile-icon__item profile-icon__item-4" data-element="button-background"
+                                        style="background-color: #06a763;"></button>
+                                <button class="profile-icon__item profile-icon__item-5" data-element="button-background"
+                                        style="background-color: #ef6c00;"></button>
                             </div>
                         </div>
                     </div>
@@ -88,9 +143,11 @@
                 </div>
                 <div class="comments-form__content">
                     <form action="comment.php" method="get">
-                        <div class="comments-form__content-avatar-40" style="background-image: url(images/foto.jpg);"></div>
+                        <div class="comments-form__content-avatar-40"
+                             style="background-image: url(images/foto.jpg);"></div>
                         <label class="comments-form__content-text-box">
-                            <textarea class="comments-form__content-text-box-area" data-target="#vk-auth" data-toggle="modal" name="comment" placeholder="Ваш комментарии..."></textarea>
+                            <textarea class="comments-form__content-text-box-area" data-target="#vk-auth"
+                                      data-toggle="modal" name="comment" placeholder="Ваш комментарии..."></textarea>
                         </label>
                         <button class="button comments-form__content-button-send-comment">Отправить</button>
                     </form>
@@ -102,22 +159,27 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="comments-list">
                 <div class="comments-list__item">
-                    <div class="comments-list__item-avatar-40" style="background-image: url(images/comment-1.jpg);"></div>
+                    <div class="comments-list__item-avatar-40"
+                         style="background-image: url(images/comment-1.jpg);"></div>
                     <div class="comments-list__item-user-name">Тлеген Кустобаев</div>
                     <div class="comments-list__item-user-comment">Прикольно</div>
                     <div class="comments-list__item-user-comment-date">Три часа назад</div>
                 </div>
                 <div class="comments-list__item">
-                    <div class="comments-list__item-avatar-40" style="background-image: url(images/comment-2.jpg);"></div>
+                    <div class="comments-list__item-avatar-40"
+                         style="background-image: url(images/comment-2.jpg);"></div>
                     <div class="comments-list__item-user-name">Владислав Смирнов</div>
                     <div class="comments-list__item-user-comment">Это типо резюме?</div>
                     <div class="comments-list__item-user-comment-date">Вчера</div>
                 </div>
                 <div class="comments-list__item">
-                    <div class="comments-list__item-avatar-40" style="background-image: url(images/comment-3.webp);"></div>
+                    <div class="comments-list__item-avatar-40"
+                         style="background-image: url(images/comment-3.webp);"></div>
                     <div class="comments-list__item-user-name">Анжелика Зайцева</div>
                     <div class="comments-list__item-user-comment">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto asperiores, commodi, cum debitis enim expedita inventore minima minus molestiae perferendis provident sequi tenetur? Blanditiis corporis eos iure neque saepe!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto asperiores, commodi, cum
+                        debitis enim expedita inventore minima minus molestiae perferendis provident sequi tenetur?
+                        Blanditiis corporis eos iure neque saepe!
                     </div>
                     <div class="comments-list__item-user-comment-date">5 минут назад</div>
                 </div>
