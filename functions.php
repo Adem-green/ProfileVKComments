@@ -2,7 +2,7 @@
 
     /**
      * @param array $data Данные в виде массива
-     * @param bool $isBreak Если передать false, то контент под вызовом функции print_array будет отображаться. По умолчанию true
+     * @param bool $isBreak Если передать false, то контент на странице до/после вывода массива будет отображаться. По умолчанию true
      */
     function print_array($data, $isBreak = true)
     {
