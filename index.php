@@ -1,6 +1,7 @@
 <?php
 
     require_once __DIR__ . '/config.php';
+    require_once __DIR__ . '/functions.php';
 
 $data = [
     'user' => [
@@ -69,7 +70,7 @@ $data = [
     ]
 ];
 
-//echo '<pre>' . print_r($data, true) . '</pre>';
+//print_array($data);
 ?>
 
 <!DOCTYPE html>
