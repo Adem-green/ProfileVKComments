@@ -55,6 +55,14 @@ $data = [
             'comment' => 'Не думал что это сработает',
             'string_date' => '2 секунды назад',
         ],
+
+        [
+            'first_name' => 'Вадим ',
+            'last_name' => 'Валеев',
+            'avatar' => 'images/comment-5.jpg',
+            'comment' => 'Неправильно!!!',
+            'string_date' => '5 минут назад',
+        ],
     ]
 ];
 
