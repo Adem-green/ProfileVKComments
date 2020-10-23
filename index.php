@@ -163,7 +163,7 @@ $data = [
                 <div class="comments-form__content">
                     <form action="comment.php" method="get">
                         <div class="comments-form__content-avatar-40"
-                             style="background-image: url(images/avatar.jpg);"></div>
+                             style="background-image: url(<?php echo $data['user']['avatar']; ?>);"></div>
                         <label class="comments-form__content-text-box">
                             <textarea class="comments-form__content-text-box-area" data-target="#vk-auth"
                                       data-toggle="modal" name="comment"
