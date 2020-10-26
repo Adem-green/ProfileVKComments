@@ -107,16 +107,15 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="comments-list">
-                <?php
-                foreach ($data['comments'] as $value){
-                    echo '<div class="comments-list__item">';
-                    echo '<div class="comments-list__item-avatar-40" style="background-image: url(' . $value['avatar'] . ');"> </div>';
-                    echo '<div class=" comments-list__item-user-name">' . $value['first_name'] . $value['last_name'] . '</div>';
-                    echo '<div class="comments-list__item-user-comment">' . $value['comment'] . '</div>';
-                    echo '<div class="comments-list__item-user-comment-date">' . $value['string_date'] . '</div>';
-                    echo '</div>';
-                };
-                ?>
+                <?php foreach ($data['comments'] as $value): ?>
+                    <div class="comments-list__item">
+                        <div class="comments-list__item-avatar-40"
+                             style="background-image: url('<?php echo $value['avatar'] ?>');"></div>
+                        <div class=" comments-list__item-user-name"><?php echo $value['first_name'] ?><?php echo $value['last_name'] ?></div>
+                        <div class="comments-list__item-user-comment"><?php echo $value['comment'] ?></div>
+                        <div class="comments-list__item-user-comment-date"><?php echo $value['string_date'] ?></div>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
