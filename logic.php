@@ -67,7 +67,6 @@ $data = [
     ],
 ];
 
-$data['comments_count'] = sizeof($data ['comments']);
 //print_array($data);
 
 ?>

@@ -108,12 +108,12 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="comments-list">
                 <?php
-                for ($i = 0; $i < $data['comments_count']; ++$i) {
+                foreach ($data['comments'] as $key => $value){
                     echo '<div class="comments-list__item">';
-                    echo '<div class="comments-list__item-avatar-40" style="background-image: url(' . $data ['comments'][$i]['avatar'] . ');"> </div>';
-                    echo '<div class=" comments-list__item-user-name">' . $data ['comments'][$i]['first_name'] . $data ['comments'][$i]['last_name'] . '</div>';
-                    echo '<div class="comments-list__item-user-comment">' . $data ['comments'][$i]['comment'] . '</div>';
-                    echo '<div class="comments-list__item-user-comment-date">' . $data ['comments'][$i]['string_date'] . '</div>';
+                    echo '<div class="comments-list__item-avatar-40" style="background-image: url(' . $data ['comments'][$key]['avatar'] . ');"> </div>';
+                    echo '<div class=" comments-list__item-user-name">' . $data ['comments'][$key]['first_name'] . $data ['comments'][$key]['last_name'] . '</div>';
+                    echo '<div class="comments-list__item-user-comment">' . $data ['comments'][$key]['comment'] . '</div>';
+                    echo '<div class="comments-list__item-user-comment-date">' . $data ['comments'][$key]['string_date'] . '</div>';
                     echo '</div>';
                 };
                 ?>
