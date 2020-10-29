@@ -32,6 +32,7 @@ $data = [
             'comment' => 'Прикольно',
             'string_date' => 'Три часа назад',
             'is_hidden' => false,
+            'background_color' => '#9decc3',
         ],
 
         [
@@ -41,6 +42,7 @@ $data = [
             'comment' => 'Это типо резюме?',
             'string_date' => 'Вчера',
             'is_hidden' => false,
+            'background_color' => 'yellow',
         ],
 
         [
@@ -50,6 +52,7 @@ $data = [
             'comment' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto asperiores, commodi, cum debitis enim expedita inventore minima minus molestiae perferendis provident sequi tenetur? Blanditiis corporis eos iure neque saepe!',
             'string_date' => '5 минут назад',
             'is_hidden' => false,
+            'background_color' => '#f09bee',
         ],
 
         [
@@ -59,6 +62,7 @@ $data = [
             'comment' => 'Не думал что это сработает',
             'string_date' => '2 секунды назад',
             'is_hidden' => true,
+            'background_color' => '',
         ],
 
         [
@@ -68,6 +72,7 @@ $data = [
             'comment' => 'Неправильно!!!',
             'string_date' => '5 минут назад',
             'is_hidden' => true,
+            'background_color' => '',
         ],
     ],
 ];

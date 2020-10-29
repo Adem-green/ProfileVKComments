@@ -109,7 +109,7 @@
             <div class="comments-list">
                 <?php foreach ($data['comments'] as $value): ?>
                     <div class="comments-list__item"
-                         style="<?php if ($value['is_hidden'] === true): ?>display: none;<?php endif; ?>">
+                         style="<?php if ($value['is_hidden'] === true): ?>display: none;<?php endif; ?> <?php if ($value['background_color'] !== ''): ?>background-color: <?php echo $value['background_color']; ?>;<?php endif; ?>">
                         <div class="comments-list__item-avatar-40"
                              style="background-image: url('<?php echo $value['avatar'] ?>');"></div>
                         <div class=" comments-list__item-user-name"><?php echo $value['first_name'] ?><?php echo $value['last_name'] ?></div>
