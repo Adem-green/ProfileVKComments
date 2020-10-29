@@ -31,6 +31,7 @@ $data = [
             'avatar' => 'images/comment-1.jpg',
             'comment' => 'Прикольно',
             'string_date' => 'Три часа назад',
+            'is_hidden' => false,
         ],
 
         [
@@ -39,6 +40,7 @@ $data = [
             'avatar' => 'images/comment-2.jpg',
             'comment' => 'Это типо резюме?',
             'string_date' => 'Вчера',
+            'is_hidden' => false,
         ],
 
         [
@@ -47,6 +49,7 @@ $data = [
             'avatar' => 'images/comment-3.jpg',
             'comment' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto asperiores, commodi, cum debitis enim expedita inventore minima minus molestiae perferendis provident sequi tenetur? Blanditiis corporis eos iure neque saepe!',
             'string_date' => '5 минут назад',
+            'is_hidden' => false,
         ],
 
         [
@@ -55,6 +58,7 @@ $data = [
             'avatar' => 'images/comment-4.jpg',
             'comment' => 'Не думал что это сработает',
             'string_date' => '2 секунды назад',
+            'is_hidden' => true,
         ],
 
         [
@@ -63,6 +67,7 @@ $data = [
             'avatar' => 'images/comment-5.jpg',
             'comment' => 'Неправильно!!!',
             'string_date' => '5 минут назад',
+            'is_hidden' => true,
         ],
     ],
 ];
