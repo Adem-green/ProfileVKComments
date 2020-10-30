@@ -42,7 +42,7 @@ $data = [
             'comment' => 'Это типо резюме?',
             'string_date' => 'Вчера',
             'is_hidden' => false,
-            'background_color' => 'yellow',
+            'background_color' => '#ffff5e',
         ],
 
         [
@@ -61,7 +61,7 @@ $data = [
             'avatar' => 'images/comment-4.jpg',
             'comment' => 'Не думал что это сработает',
             'string_date' => '2 секунды назад',
-            'is_hidden' => true,
+            'is_hidden' => false,
             'background_color' => '',
         ],
 
@@ -71,8 +71,7 @@ $data = [
             'avatar' => 'images/comment-5.jpg',
             'comment' => 'Неправильно!!!',
             'string_date' => '5 минут назад',
-            'is_hidden' => true,
-            'background_color' => '',
+            'is_hidden' => false,
         ],
     ],
 ];
