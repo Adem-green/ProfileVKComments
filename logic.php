@@ -62,7 +62,6 @@ $data = [
             'comment' => 'Не думал что это сработает',
             'string_date' => '2 секунды назад',
             'is_hidden' => false,
-            'background_color' => '',
         ],
 
         [
