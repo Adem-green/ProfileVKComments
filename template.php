@@ -108,15 +108,17 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="comments-list">
                 <?php foreach ($data['comments'] as $value): ?>
-                    <?php if ($value['is_hidden'] === false): ?>
-                        <div class="comments-list__item"
-                             style="<?php if (isset($value['background_color']) === true && $value['background_color'] !== ''): ?>background-color: <?php echo $value['background_color']; ?>;<?php endif; ?>">
-                            <div class="comments-list__item-avatar-40"
-                                 style="background-image: url('<?php echo $value['avatar'] ?>');"></div>
-                            <div class="comments-list__item-user-name"><?php echo $value['first_name'] ?><?php echo $value['last_name'] ?></div>
-                            <div class="comments-list__item-user-comment"><?php echo $value['comment'] ?></div>
-                            <div class="comments-list__item-user-comment-date"><?php echo $value['string_date'] ?></div>
-                        </div>
+					<?php if(isset($value['first_name']) === true && isset($value['last_name']) && isset($value['avatar']) && isset($value['comment']) && isset($value['string_date']) && isset($value['is_hidden'])): ?>
+						<?php if ($value['is_hidden'] === false && isset($value['first_name']) === true): ?>
+							<div class="comments-list__item"
+								 style="<?php if (isset($value['background_color']) === true && $value['background_color'] !== ''): ?>background-color: <?php echo $value['background_color']; ?>;<?php endif; ?>">
+								<div class="comments-list__item-avatar-40"
+									 style="background-image: url('<?php echo $value['avatar'] ?>');"></div>
+								<div class="comments-list__item-user-name"><?php echo $value['first_name'] ?><?php echo $value['last_name'] ?></div>
+								<div class="comments-list__item-user-comment"><?php echo $value['comment'] ?></div>
+								<div class="comments-list__item-user-comment-date"><?php echo $value['string_date'] ?></div>
+							</div>
+						<?php endif; ?>
                     <?php endif; ?>
                 <?php endforeach; ?>
             </div>

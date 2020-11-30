@@ -72,6 +72,9 @@ $data = [
             'string_date' => '5 минут назад',
             'is_hidden' => false,
         ],
+
+        [
+        ],
     ],
 ];
 
